@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  max-height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +28,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-main img {
+  width: 100%;
 }
+
+.fokep,.galeria{
+  padding: 10px;
+}
+
+.fokep{
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+}
+.bal,.jobb{
+  cursor:grab;
+  background-color: #282c344d;
+  display:flex;
+  align-items: center;
+  font-size: 50px;
+  padding: 6px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.App-main .kiemelt {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
